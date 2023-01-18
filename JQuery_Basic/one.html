@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+    </style>
+     <script>
+        function Hide(){
+           var element= document.getElementById("box");
+           element.style.opacity=0;
+        }
+
+     </script>
+    <title>Hiding Red Box</title>
+</head>
+<body>
+    <div id="box" class="box"></div>
+    <p>Hide the red box on button click</p>
+    <button id="button" onclick="Hide()">Click Me</button>
+</body>
+</html>

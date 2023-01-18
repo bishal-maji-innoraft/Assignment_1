@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Show Error Dialog</title>
+    <script>
+        function submit(){
+        //  var first_name=document.forms["register"]["f_name"].value;
+         var f_name=document.register.f_name.value;
+         if(f_name==""){
+            alert("Please Input something");
+            return;
+         }
+      
+        }
+    </script>
+</head>
+<body>
+<form name="register"  action="#" onsubmit="submit()">
+First Name : <br>
+<input type="text" name="f_name" id="f_name" value="Miskey">
+<br>Last Name : <br>
+<input type="text" name="l_name" id="l_name" value="Mouse"><br>
+
+<input type="submit" name="submit" id="submit_btn" value="Submit">
+</form>
+</body>
+</html>

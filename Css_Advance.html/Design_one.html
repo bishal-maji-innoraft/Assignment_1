@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      
+    }
+    .toolbar{
+        background-color: rgb(216, 216, 216);
+        vertical-align: middle;
+        min-width: 100%; 
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+    .toolbar >img{
+        padding: 5px;
+        margin-left: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    li{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    display: inline-block; 
+    }
+    li:hover{
+        
+        background-color: black;
+        color:white;
+    }
+    a:hover{
+        color: white;
+    }
+    a{
+        color: rgb(1, 121, 168);
+        text-decoration: none;
+    }
+    ul{
+    width: max-content;
+    margin-right: 100px;
+    }
+   
+    .container{
+          width: 1250px;
+   margin: 0 auto;
+    }
+    
+    .banner{
+        width: 100%;
+        flex-direction: row;
+        display: flex;  
+        background-color: rgb(17, 179, 243);
+    }
+    .arrow >img {
+        margin:75px;
+        
+    }
+   
+ 
+    .arrow{
+        width: 15%;        
+        height:200px;
+    }
+    .banner-text{
+        
+        width:70%;
+        
+    }
+    h1{
+        font-size: 40px;
+        color: white;
+        line-height:200px;
+    
+        text-align: center;
+    }
+    .mid{
+        display: flex;
+        justify-content: row;
+        align-items: center;
+        height: 60vh;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mid-left{
+        width: 50%;
+        height: 100%;
+        margin-right: 5px;
+    }
+    .mid-right{
+        width: 50%;
+        margin-left: 5px;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        margin-right: 100px;
+    }
+    .left-1{
+      position: relative;
+      margin-left: 100px;
+      height: 100%;
+      background-color: rgb(240, 226, 106);
+    }
+    .left-2
+    {
+    position: absolute;
+     left: -60px;
+     margin-top: 20px;
+     width: 50%;
+ 
+     background-color: rgb(232, 144, 240);
+     height: 80%;
+    }
+    .right-1{
+     height: 60%;
+     padding: 10px;
+     background-color: rgb(228, 135, 48);
+     margin-bottom: 5px;
+    }
+    .right-2{
+     height: 40%;
+     background-color: rgb(122, 236, 112);
+     margin-top: 5px;
+    }
+    input{
+        width: 70%;
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(255, 204, 152);
+    }
+    button{
+        width: 30%;
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(255, 204, 152);
+    }
+    .footer{
+       background-color: rgb(17, 179, 243);;
+    }
+    .footer >ul{
+        
+        margin: 0px auto;
+        width: 50%;
+        width: max-content;
+    }
+    .footer > li{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     list-style: none;
+     display: inline-block; 
+    }
+
+    .f-a{
+        text-decoration: none;
+        color: white;
+    }
+   </style>
+    <title>Design One</title>
+
+</head>
+<body>
+    <div class="toolbar-wrapper">
+    <div class="container">
+    <div class="toolbar">
+            <img src="logo.png" width="auto" height="50px">
+            <ul>
+                <li><a name="home" href="#">Home</a></li>
+                <li><a name="service" href="#">Service</a></li>
+                <li><a name="profile" href="#">Profile</a></li>
+                <li><a name="contact" href="#">Contact Us</a></li>
+            </ul>
+    </div>
+</div>
+</div>
+    <div class="banner-wrapper">
+        <div class="container">
+            <div class="banner">
+            <div class="arrow"><img src="images/larrow.png" height="50px" width="auto"></div>
+            <div class="banner-text"><h1>BANNER</h1></div>
+            <div class="arrow"><img  src="images/rarrow.png" height="50px" width="auto"></div>
+        </div>
+    </div>
+    </div>
+    <div class="mid-wrapper">
+        <div class="container">
+            <div class="mid">
+                <div class="mid-left">
+                  <div class="left-1">
+                    <div class="left-2"></div>
+                  </div>
+                 
+                </div>
+                <div class="mid-right">
+                 <div class="right-1">
+                    <input type="text" name="input1"> 
+                    <input type="text" name="input2">
+                    <input type="text" name="input3">
+                    <button>Submit</button>
+                 </div>
+                 <div class="right-2"></div>
+                </div>
+            </div>
+      
+        </div>
+    </div>
+    <div class="footer-wraper">
+      <div class="container">
+        <div class="footer">
+            <ul>
+                <li><a class="f-a" name="home" href="#">Home</a></li>
+                <li><a class="f-a" name="service" href="#">Service</a></li>
+                <li><a class="f-a" name="profile" href="#">Profile</a></li>
+                <li><a class="f-a" name="contactus" href="#">ContactUs</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

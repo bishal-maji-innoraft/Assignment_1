@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function SlideDown(){
+        var element=document.getElementById("description");
+        element.style.transition = "all 2s ease-in-out";
+        element.style.height = "72vh";
+    }
+  </script>
+  <style>
+  .title{
+    height: 8vh;
+    width: 100vw;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+ 
+  }
+  .description{
+    height: 32vh;
+    width: 100vw;
+    background-color: rgb(143, 212, 233);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+ 
+  }
+  
+  </style>
+
+   <title>Slide down the content</title>
+</head>
+<body>
+   <div class="title" onclick="SlideDown()" id="title">
+    Click me to slide down panel
+   </div> 
+   <div id="description" class="description">
+    Hello world !
+   </div>
+</body>
+</html>
