@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
    <style>
+    body{
+      background-color: rgb(224, 224, 224);
+    }
     *{
         margin: 0px;
         padding: 0px;
@@ -18,15 +21,22 @@
     flex-direction: row;
 
     }
+    .toolbar-wrapper{
+      background-color: white;
+    }
     .logo{
-      width: max-content;
-   
+      width: max-content; 
+      
+    }
+    .logo >img{
+      display: block;
+    }
+    .navigation > ul > li:hover{
+      background-color: rgb(201, 201, 201);
+      
+    }
     
-    }
-    .navigation{
-
-    }
-    li{
+     .navigation> ul > li{
      display: inline-block;
      list-style: none;
      padding: 10px;
@@ -38,15 +48,26 @@
     text-decoration: none;
     }
     .body-wrapper{
-        background-image: url(../Css_Advance.html/images/img-1.jpg) ;
+        background: url(../Css_Advance.html/images/img-1.jpg) no-repeat center ;
+        background-size: cover;
         width: 100vw;
+       
+        position: relative;
      
     }
-
-   
-    .box{
+    .body-wrapper::before{
+      background-color: rgba(18, 9, 71, 0.7);
+      top: 0px;
+      left: 0px;
+      content: "";
+      position: absolute;
       width: 100%;
-      margin-bottom: 30px;
+      height: 100%;
+    }
+    .box{
+      position: relative;
+      width: 100%;
+      margin-bottom: 100px;
     }
     .body-buttons{
         display: flex;
@@ -54,12 +75,13 @@
         align-content: space-between;
         flex-direction: row;
     }
+  
     .box > h1{
       font-size: 50px;
       text-align: center;
       padding: 10px;
       color: white;
-      padding-top: 200px;
+      padding-top: 250px;
     }
     .box > p{
       text-align: center;
@@ -77,19 +99,20 @@
       color: white;
       font-weight: bold;
     }
+    .body-buttons >button:hover{
+      background-color: #eec408;
+      border: 1px solid transparent;
+    }
     .body-arrow {
-     display: flex;
-     align-items: center;
-     justify-content: center;
      padding-top: 150px;
-     padding-bottom: 50px;
-    
-     
+     padding-bottom: 50px;  
+     text-align: center;
     }
      /* .......... page 2*/
      .page2{
       display: flex;
       flex-direction: row;
+      margin-bottom: 100px;
      
      }
      .leftp2{
@@ -98,9 +121,442 @@
      .rightp2{
        width: 60%;
        background-color: antiquewhite;
-       height: 400px;
+      
      }
+     .leftp2 >h1{
+      color: black;
+      padding: 10px;
+      font-size: 30px;
+      margin-top: 10px;
+     }
+    .leftp2 > p{
+      margin-top: 10px;
+      padding: 10px;
+    }
+     .leftp2 >ul > li > a{
+      color: black;
+      padding: 10px;
+      list-style: none;
+      vertical-align: super;
+    }
+    .leftp2 > ul{
+      margin-top: 20px;
+      padding: 10px;
+     
+    }
+/* ----------------------page 3 */
+    .page3-wrapper{
+      background: url("images/img-2.jpg") no-repeat center;
+      background-size: cover;
+      position: relative;
+     
+    }
+    .page3-wrapper::before{
+      background-color: rgba(18, 9, 71, 0.7);
+      top: 0px;
+      left: 0px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .page3{
+      position: relative;
+    }
+    .p3-heading{
+      padding-top: 100px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+    .p3-cards{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+    .p3-card-img{
+      margin: auto;
+      padding: 10px;
+      text-align: center;
+    }
+   
+    .p3-card >h3 {
+      text-align: center;
+      color: white;
+      padding: 10px;
+    
+    }
+    .p3-card > p {
+      text-align: center;
+      color: white;
+      padding: 10px;
+    }
+    .p3-button > button{
+      width: 200px;
+      height: 50px;
+      margin: 20px;
+    
+     background-color: #d0a904; 
+     font-weight: bold;
+     border: 1px solid solid  #d0a904; 
+     border-radius: 50px ; 
+     color: white;
 
+    }
+    .p3-button{
+      margin: auto;
+      width: 50%;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    /* -------------page 4----------------------- */
+    .page4{
+     padding-bottom: 100px;
+
+    }
+    .page4 > h1{
+      padding-top: 100px;
+    
+    }
+    .page4 >p{
+      text-align: left;
+      padding-top: 10px;
+    }
+    .page4 > ul{
+     padding-top: 50px;
+     padding-bottom: 30px;
+    }
+    .page4 > ul > li{
+      padding: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: inline-block;
+      list-style: none;
+      
+    }
+    .page4 > ul > li:hover{
+      background-color: rgb(201, 201, 201);
+      
+    }
+    .p4-box{
+     display: flex;
+     
+     flex-direction: row;
+    
+    }
+    .p4-box1{
+     width: 30%;
+     margin-right: 10px;
+     
+    }
+    .p4-box2{
+      margin-left: 10px;
+      margin-right: 10px;
+       width: 30%;
+     
+
+      }
+    .p4-box3{
+        width: 30%;
+        margin-left: 10px;
+       
+      }
+      .box1-sub1,.box3-sub2{
+        width: 100%;
+        height: 420px;
+     
+    
+      }
+      .box1-sub1{
+        margin-bottom: 20px;
+      }
+      .box3-sub2{
+        margin-top: 20px;
+      }
+   
+      .box2-sub2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+     
+      .box1-sub2,.box2-sub1,.box2-sub2,.box2-sub3,.box3-sub1{
+        width: 100%;
+        height: 200px;
+
+      }
+      .page5-wrapper{
+        position: relative;
+        background: url("images/img-4.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .page5-wrapper::before{
+      background-color: rgba(18, 9, 71, 0.7);
+      top: 0px;
+      left: 0px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      .page5{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-top: 50px;
+        position: relative;
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+      }
+      .p5-box{
+        width: 25%;
+        text-align: center;
+       
+      }
+      .p5-box > h4{
+        color: white;
+        padding: 10px;
+        padding-top: 15px;
+      }
+      .p5-box > h4:hover{
+        color: #eec408;
+      }
+      .p5-box >h2{
+        color: white;
+      }
+      .p5-box > h2:hover{
+        color: #eec408;
+      }
+      /* --------page 6------------------ */
+      .page6{
+        padding-bottom: 100px;
+      } 
+      .page6 > h2{
+        font-size: 30px;
+      }
+      .page6 > h2 {
+        text-align: center;
+        padding: 10px;
+      }
+      .page6 > h3 {
+        text-align: center;
+        padding: 10px;
+      }
+      .p6-card > p {
+        text-align: center;
+        padding: 10px;
+      }
+      .page6 > p {
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      
+      .p6-box{
+        display: flex;
+        justify-content: space-between;  
+        flex-direction: row;
+        
+      }
+      .p6-card{
+        width: 30%;
+        background-color: white;
+        padding: 10px;
+        margin-top: 50px;
+        border-radius: 10px;
+      
+      }
+      .p6-card > h3{
+       padding-top: 30px;
+       text-align: center;
+      }
+      .p6-card-btn {
+         margin-top: 50px;
+         margin-bottom: 50px;
+         text-align: center;
+      }
+      .p6-card-btn >button{
+        border: 1px solid black;
+        background-color: white;
+        width: 200px;
+        padding: 10px;
+        border-radius: 50px;
+        font-weight: bold;
+        
+      }
+      .p6-card-btn > button:hover{
+        color: white;
+        border:  1px solid transparent;
+        background: #eec408;
+      }
+      /* --------page7--------- */
+      .page7-wrapper{
+        position: relative;
+        background: url("images/img-3.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .page7-wrapper::before {
+      background-color: rgba(18, 9, 71, 0.7);
+      top: 0px;
+      left: 0px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      .page7{
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+      }
+      .p7-head > h2{
+        display: inline-block;
+        font-size: 30px;
+      }
+      .p7-head-img{
+        float: right;
+      }
+
+      .p7-head-img-cover{
+        display: inline-block;
+        background-color: #3a376c;
+      }
+      .p7-head-img-cover :hover{
+       
+        background-color:#d0a904;
+      }
+      .p7-head-img-cover > img{
+        padding: 20px;
+      }
+      .page7 >  p{
+        padding-top: 30px;
+        
+        padding-bottom: 50px;
+      }
+      .p7-boxes{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: row;
+      }
+      .p7-box > p {
+       padding: 10px;
+      }
+      .p7-box > h2 {
+       padding: 10px;
+      }
+      /* ---------page 8------------- */
+      .page8{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .p8-boxes{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+      .p8-box{
+        background-color: white;
+        border-radius: 10px;
+        width: 32%;
+        margin-right: 20px;
+      }
+      .page8 > p{
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+      .p8-box-content{
+        padding: 20px;
+        text-align: left;
+      }
+      .page8 >h2{
+        font-size: 30px;
+      }
+      .p8-box-content > h3{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+      }
+      .p8-box-content > button{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 20px;
+        border:  1px solid black;
+        background-color: white;
+        font-weight: bold;
+      }
+      .p8-box-content > button:hover{
+        color: white;
+        border:  1px solid transparent;
+        background: #eec408;
+      }
+      /* --------page 9---------------- */
+      .page9{
+       color: white;
+       padding-bottom: 20px;
+      }
+      .page9 > p{
+        text-align: center;
+      }
+      .page9 > .p9-border{
+        width: 100%;
+        height: 1px;
+        background-color: rgb(212, 212, 212);
+        margin-bottom: 20px;
+      }
+      .page9-wrapper{
+        background-color: #3a376c;
+      }
+      .p9-boxes{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+      }
+      .p9-box{
+        width: 22%;
+       
+      }
+      .p9-box >h3{
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+      .p9-box ul> li{
+        display: block;
+        padding: 5px;
+      }
+      .p9-boxes > .p9-box-last{
+        width: 34%;
+        
+      }
+      .p9-box-last > h3{
+        text-align: right;
+        padding-right: 10px;
+      }
+      .p9-box-last > .p9-box-sub{
+        margin-top: 20px;
+        text-align: right;
+      }
+      .p9-box-sub > input{
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 25px 0px 0px 25px;
+        background-color: white;
+      }
+      .p9-box-sub > button{
+       float: inline-end;
+       height: 50px;
+       padding: 10px;
+       background-color: #d0a904;;
+       border-radius: 0px 25px 25px 0px;
+      }
    </style>
     <title>Website</title>
 </head>
@@ -129,10 +585,10 @@
     <div class="body-wrapper">
       <div class="container">
           <div class="box">
-            <h1>We Will Make Your Buisness <br> Great Again</h1>
+            <h1>We Will <b>Make </b>Your <b>Buisness</b> <br> Great Again</h1>
           <p>Qnsectetur adipisicing elit. impedit repudiandae nisi <br> maiores dolore dolor.</p>
           <div class="body-buttons">
-            <button style="background-color: rgb(251, 209, 0);   border: 1px solid rgb(251, 209, 0);">CONTACT US</button>
+            <button>CONTACT US</button>
             <button>DISCOVER NOW</button>
           </div>
           <div class="body-arrow">
@@ -146,21 +602,288 @@
       <div class="container">
         <div class="page2">
           <div class="leftp2">
-            <h1>Hello World</h1>
+            <h1>Hello <b>World</b></h1>
             <p>Eeligendi autem consequatur cupiditate deleniti officiis aliquid <br>
             repellat provident ut rerum excepturi, ex iure vertatis. Deeleniti <br>
-          numquam quis voluptate tempora. Aliquam voluptatibus placeat <br>
-        maiores!</p>
-            <ul>
-              <li><img src="images/icons/i-diamond.svg" alt=""> <h3>Exploring your area of activity</h3></h3></li>
-              <li><img src="images/icons/i-wallet_d.svg" alt=""> <h3>Competitive analysis</h3></h3></li>
-              <li><img src="images/icons/i-trophy_d.svg" alt=""> <h3>Do the work in time</h3></h3></li>
+             numquam quis voluptate tempora. Aliquam voluptatibus placeat <br>
+              maiores!</p>
+            <ul >
+              <li> <img src="images/icons/i-diamond_b.svg" width="40px" height="auto"><a href="#">Exploring your area of activity</a></li>
+              <li> <img src="images/icons/i-wallet-d.svg" width="40px" height="auto"> <a href="#">Competitive analysis</a></li>
+              <li> <img src="images/icons/i-trophy-d.svg" width="40px" height="auto"><a href="#">Do the work in time</a></li>
             </ul>
           </div>
-          <div class="rightp2"></div>
+          <div class="rightp2">
+          <img src="images/img-3.jpg" alt="" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page3-wrapper">
+      <div class="container">
+        <div class="page3">
+          <div class="p3-heading"> 
+            <h1>Some of our <b>best services</b> <br> to solve your problems </h1>
+          </div>
+          <div class="p3-cards">
+            <div class="p3-card">
+              <div class="p3-card-img"> <img src="images/icons/i-message.svg" width="50px" height="auto" alt=""></div>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectur adipisicing <br>
+            elit. Ex cupiditate pariatur natus, laboriosam!</p>
+            </div>
+            <div class="p3-card">
+              <div class="p3-card-img"> <img src="images/icons/i-feature.svg" width="50px" height="auto" alt=""></div>
+              <h3>Digital Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectur adipisicing <br>
+              elit. Ex cupiditate pariatur natus, laboriosam!</p>
+            
+            </div>
+            <div class="p3-card">
+              <div class="p3-card-img"> <img src="images/icons/i-sketch.svg" width="50px" height="auto" alt=""></div>
+              <h3>Digital Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectur adipisicing <br>
+              elit. Ex cupiditate pariatur natus, laboriosam!</p>  
+             </div>
+             </div>
+             <div class="p3-button">
+            <button>ORDER A SERVICE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="page4-wrapper">
+    <div class="container">
+      <div class="page4">
+        <h1><b>Good design </b>is obvious <br> Great design is transparent.</h1>
+        <p>About Joe @ graphic designer, digital ilteracy techer</p>
+        <ul>
+          <li>SHOW ALL</li>
+          <li>DESIGN</li>
+          <li>CODE</li>
+          <li>ART</li>
+        </ul>
+        <div class="p4-box">
+          <div class="p4-box1">
+            <div class="box1-sub1"><img src="images/12-min.jpg" width="100%" height="100%"></div>
+            <div class="box1-sub2"><img src="images/2-min.jpg" width="100%" height="100%"></div>
+          </div>
+          <div class="p4-box2">
+            <div class="box2-sub1"><img src="images/2-min.jpg" width="100%" height="100%"></div>
+            <div class="box2-sub2"><img src="images/2-min.jpg" width="100%" height="100%"></div>
+            <div class="box2-sub3"><img src="images/2-min.jpg" width="100%" height="100%"></div>
+          </div>
+          <div class="p4-box3">
+            <div class="box3-sub1"><img src="images/2-min.jpg" width="100%" height="100%"></div>
+            <div class="box3-sub2"><img src="images/12-min.jpg" width="100%" height="100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="page5-wrapper">
+    <div class="container">
+      <div class="page5">
+        <div class="p5-box">
+          <div class="p5-icon">
+            <img src="images/icons/i-team.svg" width="60px" height="auto"  alt="">
+          </div>
+          <h4>Unique Customers:</h4>
+          <h2>3519+</h2>
+
+        </div>
+        <div class="p5-box">
+          <div class="p5-icon">
+            <img src="images/icons/i-shield.svg" width="60px" height="auto"  alt="">
+          </div>
+          <h4>Complete projects:</h4>
+          <h2>3519+</h2>
+
+        </div>
+        <div class="p5-box">
+          <div class="p5-icon">
+            <img src="images/icons/i-diamond.svg" width="60px" height="auto"  alt="">
+          </div>
+          <h4 >Happy Users:</h4>
+          <h2 >3519+</h2>
+
+        </div>
+        <div class="p5-box">
+          <div class="p5-icon">
+            <img src="images/icons/i-trophy.svg" width="60px" height="auto"  alt="">
+          </div>
+          <h4>Honors and awards:</h4>
+          <h2>3519+</h2>
 
         </div>
       </div>
     </div>
+   </div>
+   <div class="page6-wrapper">
+    <div class="container">
+      <div class="page6">
+        <h2>Flexible <b>Pricing</b> Plans</h2>
+        <p>Dolor sit Moliltia harum ea ut eaque velit.</p>
+       <div class="p6-box">
+        <div class="p6-card">
+          <h3>Trial version</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>
+          adipisicing elit.</p>
+          <h3>free</h3>
+          <p>500gb drive space</p>
+          <p>Unlimited message</p>
+          <p style="opacity:0.5">Free Email address</p>
+          <p style="opacity:0.5">Friendly support</p>
+          <div class="p6-card-btn">
+            <button> PURCHASE</button>
+          </div>
+        </div>
+        <div class="p6-card">
+          <h3>Regular</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>
+          adipisicing elit.</p>
+          <h3>$ 19/month</h3>
+          <p>500gb drive space</p>
+          <p>Unlimited message</p>
+          <p>Free Email address</p>
+          <p style="opacity:0.5"> Friendly support</p>
+          <div class="p6-card-btn">
+            <button> PURCHASE</button>
+          </div>
+        </div>
+        <div class="p6-card">
+          <h3>Extended</h3>
+          <p>Lorem ipsum dolor sit amet consectetur <br>
+          adipisicing elit.</p>
+          <h3>$ 29/month</h3>
+          <p>500gb drive space</p>
+          <p>Unlimited message</p>
+          <p>Free Email address</p>
+          <p>Friendly support</p>
+          <div class="p6-card-btn">
+            <button> PURCHASE</button>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+   </div>
+   <div class="page7-wrapper">
+    <div class="container">
+      <div class="page7">
+        <div class="p7-head">
+          <h2><b>Testimonials</b> About Us</h2>
+          <div class="p7-head-img">
+            <div class="p7-head-img-cover"><img src="images/icons/larrow.png" width="50px" height="50px" alt=""></div>
+            <div class="p7-head-img-cover"><img src="images/icons/rarrow.png" width="50px" height="50px" alt=""></div>   
+          </div>
+        </div>
+        <p>Dolor sit Mollitia ea ut eaque velit</p>
+        <div class="p7-boxes">
+          <div class="p7-box">
+            <img src="images/t-1.jpeg" width="100px" width="100px" style="border-radius: 50%;" alt="Avatar">
+            <h2>Robert Newmen</h2>
+            <p>Microsoft Corporation</p>
+            <p>Dolor sit amet, consectetur adipisicing elit. Dolor sit Mollitia harum ea ut eaque velit. 
+            Ex rem provident nobis at deserunt, dolores blanditiis  vero aut, Fuga ab quisquam 
+            aliquid eius vitae! Dolor sit Mollitia harum ea ut eaque velit.</p>
+          </div>
+          <div class="p7-box">
+          <img src="images/t-2.jpeg" width="100px" width="100px" style="border-radius: 50%;" alt="Avatar">
+        
+            <h2>Robert Newmen</h2>
+            <p>Space X</p>
+            <p>Dolor sit amet, consectetur adipisicing elit. Dolor sit Molitia harum ea ut eaque velit. 
+            Ex rem provident nobis at deserunt, dolores blanditiis vero aut. Fuga ab quisquam 
+          aliquid eius vitae! Dolor sit Mollitia harum ea ut eaque velit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="page8-wrapper">
+    <div class="container">
+      <div class="page8">
+        <h2>Latest <strong>blog</strong> posts</h2>
+        <p>Dolor sit Mollitia harum ea ut eaque velit.</p>
+        <div class="p8-boxes">
+          <div class="p8-box">
+            <img src="images/img-2.jpg" width="100%" height="auto" alt="">
+            <div class="p8-box-content">
+            <h3>Fuga ab quisquam culpa aliquid eius vitae.</h3>
+            <p>Delectus culpa in consequuntur nemo non reprehenderit repallat deleniti sunt...</p>
+            <button>READ MORE</button>
+          </div>
+          </div>
+          <div class="p8-box">
+            <img src="images/img-2.jpg" width="100%" height="auto" alt="">
+            <div class="p8-box-content">
+            <h3>Fuga ab quisquam non reiciendis aliquid eius vitae.</h3>
+            <p>Delectus culpa in consequuntur nemo non reprehenderit repallat deleniti sunt...</p>
+            <button>READ MORE</button>
+          </div>
+          </div>
+          <div class="p8-box">
+            <img src="images/img-2.jpg" width="100%" height="auto" alt="">
+            <div class="p8-box-content">
+            <h3>Fuga ab quisquam aliquid eius vitae.</h3>
+            <p>Delectus culpa in consequuntur nemo non reprehenderit repallat deleniti sunt...</p>
+            <button>READ MORE</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="page9-wrapper">
+    <div class="container">
+      <div class="page9">
+        <img src="images/logo-footer.jpg" alt="" height="75px" width="auto">
+        <div class="p9-boxes">
+          <div class="p9-box">
+           <h3>Company</h3>
+           <ul>
+            <li>ABOUT</li>
+            <li>SUPPORT</li>
+            <li>PRESS</li>
+            <LI>lEAGAL & PRIVACY</LI>
+           </ul>
+          </div>
+          <div class="p9-box">
+            <h3>Company</h3>
+            <ul>
+             <li>ABOUT</li>
+             <li>SUPPORT</li>
+             <li>PRESS</li>
+             <LI>lEAGAL & PRIVACY</LI>
+            </ul>
+           </div>
+           <div class="p9-box">
+            <h3>Company</h3>
+            <ul>
+             <li>ABOUT</li>
+             <li>SUPPORT</li>
+             <li>PRESS</li>
+             <LI>lEAGAL & PRIVACY</LI>
+            </ul>
+           </div>
+           <div class="p9-box-last">
+            <h3>Subscribe newsletter</h3>
+            <div class="p9-box-sub"> 
+              <input type="email" placeholder="email"/> 
+              <button>
+                <img src="images/icons/i-message.svg" alt="buttonpng"  width="20px" height="20px"/>
+              </button>
+            </div>
+          </div>
+      
+        </div>
+        <div class="p9-border" ></div>
+        <p> COPYRIGHT @ ALL RIGHTS RESERVED LATE 2018 ⌋ DESIGN AND DEVELOPMENT BY MILLERDIGITALDESIGN</p>
+
+      </div>
+    </div>
+   </div>
+
 </body>
 </html>
